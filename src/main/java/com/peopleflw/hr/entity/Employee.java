@@ -3,7 +3,6 @@ package com.peopleflw.hr.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Data
 @Entity
@@ -19,5 +18,9 @@ public class Employee {
 
     @Column(name = "last_name")
     String lastName;
+
+    @Column(name = "state")
+    @Enumerated(EnumType.STRING)
+    EmployeeState state = EmployeeState.ADDED;
 
 }

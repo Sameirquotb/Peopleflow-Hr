@@ -24,6 +24,13 @@ databaseChangeLog:
                   name: first_name
                   type: VARCHAR(250)
               - column:
+                  constraints:
+                    nullable: false
                   name: last_name
                   type: VARCHAR(250)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: state
+                  type: VARCHAR(20)
             tableName: employee

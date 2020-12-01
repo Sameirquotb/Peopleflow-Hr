@@ -22,7 +22,7 @@ public class EmployeeController {
     }
 
     @GetMapping
-    public Iterable<Employee> getEmployee() {
+    public Iterable<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 

@@ -13,10 +13,10 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(name = "first_name")
+    @Column(name = "first_name", length = 250, nullable = false)
     String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "last_name", length = 250, nullable = false)
     String lastName;
 
     @Column(name = "state")

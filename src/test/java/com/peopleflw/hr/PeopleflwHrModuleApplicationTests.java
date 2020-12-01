@@ -6,6 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class PeopleflwHrModuleApplicationTests {
 
+	/***
+	 *  sanity check test that will application context will start successfully.
+	 */
 	@Test
 	void contextLoads() {
 	}

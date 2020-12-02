@@ -39,7 +39,7 @@ java -jar *.jar
 
 Please check swagger generated documentation  after running the server
 
-http://localhost:8080/swagger-ui
+http://localhost:8080/swagger-ui/
   
 Currently the project proved tree end points :
   

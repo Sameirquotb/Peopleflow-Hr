@@ -8,20 +8,36 @@ PeopleFlw (www.pplflw.com) is a global HR platform enabling companies to hire & 
  - Liquibase (Database migration tool)
 # Running  the application 
  - Download code from Github repository.
- - 
+ - Navigate to project folder /hr
+ - Run 
+ ```
+./mvnw clean package  
+ ```
+ - Navigate to target folder
+ ```
+cd target/
+ ```
+ - Run 
+ ```
+java -jar *.jar  
+ ```
 
 # Suggested Enhancements
 
- - Add more properties to Employee entity.
  - Using [Spring state machine](https://projects.spring.io/spring-statemachine/) instead of simple enum.
- - Use DTO in controller layer instead of the entity bean and use mapping libraries to me between entities and DTOs and add more validation logic to DTOs.
-
- - Add Audit (created at, modified at ... etc ) feature to Employee entity using  hibernate out of the box implementation.
+ - Use DTO in controller layer instead of the entity bean and use mapping libraries to map me between entities and DTOs and move validation annotations to DTOs.
+ - Add Audit (createdAt, modifiedAt ... etc ) feature to Employee entity using  hibernate out of the box implementation.
  - Implement service security (Authentication).
  - Add pagination feature to spring repositories.
+ - In Unit test, Load database with initial test data using libraries like DBUnit 
+ 
  
 
-# End Points  
+# End Points 
+
+Please check swagger generated documentation  after running the server
+
+http://localhost:8080/swagger-ui
   
 Currently the project proved tree end points :
   

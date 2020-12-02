@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
@@ -37,8 +38,9 @@ public class Employee {
     @Column(name = "salary")
     Double salary;
 
+    @NotEmpty
     @Email(message = "Invalid email address")
-    @Column(name = "email")
+    @Column(name = "email", nullable = false)
     String email;
 
 }

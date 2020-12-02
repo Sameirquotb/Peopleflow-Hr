@@ -7,6 +7,8 @@ PeopleFlw (www.pplflw.com) is a global HR platform enabling companies to hire & 
  - Lombok.
  - Liquibase (Database migration tool)
 # Running  the application 
+
+ - Download and Install JDK 8 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html .
  - Download code from Github repository.
  - Navigate to project folder /hr
  - Run 
